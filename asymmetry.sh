@@ -55,7 +55,7 @@ aff=" -t affine[ 0.2 ]  -c [ $affits ,1.e-7,20]  -s 3x2x1x0 -f 8x4x2x1 -u $uval 
 metparams=" 1 , 32, regular , 0.5 "
 synits=220x220x100x50  #BA 
 # synits=0x0x0x0  #BA 
-dtx="syn[ 0.25, 3, 0.0 ]"
+dtx="syn[ 0.25, 3, 0.1 ]"
 ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS=2
 export ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS
 #####################################################
