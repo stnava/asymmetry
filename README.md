@@ -25,3 +25,6 @@ the above analysis produces an asymmetry image based on the jacobian.
 ![Asymmetry](https://github.com/stnava/asymmetry/blob/master/data/asymm_s.jpg?raw=true)
 ![AsymmMeasurement](https://github.com/stnava/asymmetry/blob/master/data/asymm_measure.jpg?raw=true)
 ![Diff](https://github.com/stnava/asymmetry/blob/master/data/diff_of_images.jpg?raw=true)
+
+
+NOTE: you may need to edit the asymmetry script for your own study - i.e. to make sure the registrations are accurate, the correct metrics are used, etc.
