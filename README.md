@@ -16,6 +16,7 @@ where you input images and their reflections - J and reflection(J) around the ax
 you can reflect an image by:
 
 `ImageMath 2 reflection.mat ReflectionMatrix r16slice.nii.gz 0 `
+
 `antsApplyTransforms -d 2 -i r16slice.nii.gz -o test.nii.gz -t reflection.mat -r r16slice.nii.gz`
 
 the above analysis produces an asymmetry image based on the jacobian.
