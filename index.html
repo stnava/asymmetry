@@ -1,0 +1,84 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Asymmetry</title>
+  <meta name="description" content="asymmetry analysis with ANTs">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Asymmetry</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">asymmetry analysis with ANTs</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/stnava/asymmetry/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/stnava/asymmetry/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/stnava/asymmetry" class="code">View Asymmetry on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a name="asymmetry" class="anchor" href="#asymmetry"><span class="octicon octicon-link"></span></a>asymmetry</h1>
+
+<p>asymmetry analysis with ANTs</p>
+
+<p>requires ANTs version Oct. 30, 2013 or later </p>
+
+<p>run the asymmetry command mapping an input to a symmetric template </p>
+
+<p><code>asymmetry.sh -d 2 -a 0 -f data/symm_t.nii.gz -m data/asymm_s.nii.gz -o XXXX</code></p>
+
+<p>you can build a symmetric template by running <a href="https://github.com/ntustison/TemplateBuildingExample">antsMultivariateTemplate construction</a></p>
+
+<p>where you input images and their reflections - J and reflection(J) around the axis of symmetry</p>
+
+<p>you can reflect an image by:</p>
+
+<p><code>ImageMath 2 reflection.mat ReflectionMatrix r16slice.nii.gz 0</code>
+<code>antsApplyTransforms -d 2 -i r16slice.nii.gz -o test.nii.gz -t reflection.mat -r r16slice.nii.gz</code></p>
+
+<p>the above analysis produces an asymmetry image based on the jacobian.</p>
+
+<p><img src="https://github.com/stnava/asymmetry/blob/master/data/symm_t.jpg?raw=true" alt="template"><img src="https://github.com/stnava/asymmetry/blob/master/data/asymm_s.jpg?raw=true" alt="Asymmetry"><img src="https://github.com/stnava/asymmetry/blob/master/data/asymm_measure.jpg?raw=true" alt="AsymmMeasurement"><img src="https://github.com/stnava/asymmetry/blob/master/data/diff_of_images.jpg?raw=true" alt="Diff"></p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/stnava" class="avatar"><img src="https://0.gravatar.com/avatar/948c3f7aad7a55b0a53956aee8d25fce?d=https%3A%2F%2Fidenticons.github.com%2F7a7b65b4103ecd3659e65ecc8193851c.png&amp;r=x&amp;s=60" width="48" height="48"/></a> <a href="https://github.com/stnava">stnava</a> maintains <a href="https://github.com/stnava/asymmetry">Asymmetry</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/stnava/asymmetry/tarball/master" class="tar">tar</a><a href="https://github.com/stnava/asymmetry/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
