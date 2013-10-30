@@ -11,7 +11,7 @@ run the asymmetry command mapping an input to a symmetric template
 
 you can build a symmetric template by running [antsMultivariateTemplate construction](https://github.com/ntustison/TemplateBuildingExample)
 
-where you input images and their reflections - I and reflection(I) around the axis of symmetry
+where you input images and their reflections - J and reflection(J) around the axis of symmetry
 
 you can reflect an image by:
 
@@ -20,3 +20,6 @@ you can reflect an image by:
 
 the above analysis produces an asymmetry image based on the jacobian.
 
+![template](https://github.com/stnava/asymmetry/blob/master/data/symm_t.jpg?raw=true)
+![Asymmetry](https://github.com/stnava/asymmetry/blob/master/data/asymm_s.jpg?raw=true)
+![AsymmMeasurement](https://github.com/stnava/asymmetry/blob/master/data/asymm_measure.jpg?raw=true)
