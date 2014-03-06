@@ -87,6 +87,6 @@ $reg -d $dim   -r  ${prefix}_reflection.mat -r ${prefix}_L0GenericAffine.mat \
     -o [${prefix}_R,${prefix}_R.nii.gz]
 
 ##########################################################
-ANTSJacobian $dim ${prefix}_R1Warp.nii.gz  ${prefix}_R 1
-ANTSJacobian $dim ${prefix}_L1Warp.nii.gz  ${prefix}_L 1
+CreateJacobianDeterminantImage $dim ${prefix}_R1Warp.nii.gz  ${prefix}_Rlogjacobian.nii.gz 1 1
+CreateJacobianDeterminantImage $dim ${prefix}_L1Warp.nii.gz  ${prefix}_Llogjacobian.nii.gz 1 1
 ImageMath $dim ${prefix}_asym.nii.gz  - ${prefix}_Llogjacobian.nii.gz ${prefix}_Rlogjacobian.nii.gz
